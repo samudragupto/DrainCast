@@ -1,0 +1,547 @@
+{
+  "ward": "Velachery",
+  "source": "OpenStreetMap alignments (simplified) — synthetic hydraulic attributes",
+  "count": 20,
+  "roads": [
+    {
+      "id": "RD-VMW-01",
+      "roadName": "Velachery Main Road (West)",
+      "coordinates": [
+        [
+          12.9838,
+          80.2012
+        ],
+        [
+          12.9852,
+          80.2035
+        ],
+        [
+          12.9866,
+          80.2062
+        ],
+        [
+          12.9872,
+          80.2085
+        ],
+        [
+          12.9882,
+          80.2112
+        ],
+        [
+          12.9896,
+          80.2142
+        ]
+      ],
+      "connectedDrainNodeId": "JN-VEL-03",
+      "roadLengthM": 1558,
+      "roadType": "Main Road",
+      "areaName": "Velachery Main Road"
+    },
+    {
+      "id": "RD-VME-02",
+      "roadName": "Velachery Main Road (East)",
+      "coordinates": [
+        [
+          12.9896,
+          80.2142
+        ],
+        [
+          12.9908,
+          80.2162
+        ],
+        [
+          12.9928,
+          80.2188
+        ],
+        [
+          12.9938,
+          80.2205
+        ]
+      ],
+      "connectedDrainNodeId": "MH-VEL-04",
+      "roadLengthM": 828,
+      "roadType": "Main Road",
+      "areaName": "Velachery Main Road"
+    },
+    {
+      "id": "RD-HFN-03",
+      "roadName": "100 Feet Road (North)",
+      "coordinates": [
+        [
+          12.993,
+          80.206
+        ],
+        [
+          12.9902,
+          80.2072
+        ],
+        [
+          12.9872,
+          80.2085
+        ]
+      ],
+      "connectedDrainNodeId": "MH-VEL-01",
+      "roadLengthM": 699,
+      "roadType": "Arterial Road",
+      "areaName": "100 Feet Road"
+    },
+    {
+      "id": "RD-HFS-04",
+      "roadName": "100 Feet Road (South)",
+      "coordinates": [
+        [
+          12.9872,
+          80.2085
+        ],
+        [
+          12.983,
+          80.2088
+        ],
+        [
+          12.979,
+          80.2085
+        ],
+        [
+          12.9745,
+          80.209
+        ],
+        [
+          12.971,
+          80.2092
+        ],
+        [
+          12.9665,
+          80.2095
+        ]
+      ],
+      "connectedDrainNodeId": "JN-VEL-12",
+      "roadLengthM": 2305,
+      "roadType": "Arterial Road",
+      "areaName": "100 Feet Road"
+    },
+    {
+      "id": "RD-TLR-05",
+      "roadName": "Taramani Link Road",
+      "coordinates": [
+        [
+          12.9928,
+          80.2188
+        ],
+        [
+          12.9935,
+          80.2215
+        ],
+        [
+          12.994,
+          80.2245
+        ]
+      ],
+      "connectedDrainNodeId": "SI-VEL-05",
+      "roadLengthM": 633,
+      "roadType": "Arterial Road",
+      "areaName": "Taramani Link Road"
+    },
+    {
+      "id": "RD-BN1-06",
+      "roadName": "Baby Nagar 1st Main Street",
+      "coordinates": [
+        [
+          12.9938,
+          80.2205
+        ],
+        [
+          12.9915,
+          80.2222
+        ],
+        [
+          12.9892,
+          80.2232
+        ],
+        [
+          12.987,
+          80.2238
+        ],
+        [
+          12.9852,
+          80.2248
+        ],
+        [
+          12.9838,
+          80.2255
+        ]
+      ],
+      "connectedDrainNodeId": "JN-VEL-06",
+      "roadLengthM": 1245,
+      "roadType": "Residential Street",
+      "areaName": "Baby Nagar"
+    },
+    {
+      "id": "RD-GN2-07",
+      "roadName": "Gandhi Nagar 2nd Main Road",
+      "coordinates": [
+        [
+          12.9838,
+          80.2255
+        ],
+        [
+          12.981,
+          80.2262
+        ],
+        [
+          12.978,
+          80.2268
+        ],
+        [
+          12.975,
+          80.227
+        ],
+        [
+          12.9742,
+          80.2265
+        ]
+      ],
+      "connectedDrainNodeId": "MH-VEL-07",
+      "roadLengthM": 1097,
+      "roadType": "Residential Street",
+      "areaName": "Gandhi Nagar"
+    },
+    {
+      "id": "RD-VJ2-08",
+      "roadName": "Vijayanagar 2nd Main Road",
+      "coordinates": [
+        [
+          12.9896,
+          80.2142
+        ],
+        [
+          12.9878,
+          80.214
+        ],
+        [
+          12.986,
+          80.2138
+        ],
+        [
+          12.9842,
+          80.2135
+        ],
+        [
+          12.9822,
+          80.2125
+        ]
+      ],
+      "connectedDrainNodeId": "SI-VEL-14",
+      "roadLengthM": 852,
+      "roadType": "Residential Street",
+      "areaName": "Vijayanagar"
+    },
+    {
+      "id": "RD-CMS-09",
+      "roadName": "CMS Colony Main Road",
+      "coordinates": [
+        [
+          12.9822,
+          80.2125
+        ],
+        [
+          12.981,
+          80.215
+        ],
+        [
+          12.9796,
+          80.2172
+        ],
+        [
+          12.9782,
+          80.2198
+        ]
+      ],
+      "connectedDrainNodeId": "SI-VEL-08",
+      "roadLengthM": 909,
+      "roadType": "Residential Street",
+      "areaName": "CMS Colony"
+    },
+    {
+      "id": "RD-DHM-10",
+      "roadName": "Dhandeeswaram Main Street",
+      "coordinates": [
+        [
+          12.9782,
+          80.2198
+        ],
+        [
+          12.9762,
+          80.2212
+        ],
+        [
+          12.9738,
+          80.2222
+        ],
+        [
+          12.971,
+          80.223
+        ]
+      ],
+      "connectedDrainNodeId": "JN-VEL-09",
+      "roadLengthM": 880,
+      "roadType": "Residential Street",
+      "areaName": "Dhandeeswaram"
+    },
+    {
+      "id": "RD-PLK-11",
+      "roadName": "Pallikaranai Connector Road",
+      "coordinates": [
+        [
+          12.971,
+          80.223
+        ],
+        [
+          12.9682,
+          80.2245
+        ],
+        [
+          12.9652,
+          80.2265
+        ]
+      ],
+      "connectedDrainNodeId": "MH-VEL-10",
+      "roadLengthM": 749,
+      "roadType": "Arterial Road",
+      "areaName": "Pallikaranai Connector"
+    },
+    {
+      "id": "RD-BZM-12",
+      "roadName": "Bazaar Main Road",
+      "coordinates": [
+        [
+          12.9872,
+          80.2085
+        ],
+        [
+          12.986,
+          80.2108
+        ],
+        [
+          12.985,
+          80.2132
+        ],
+        [
+          12.9842,
+          80.2135
+        ]
+      ],
+      "connectedDrainNodeId": "SI-VEL-02",
+      "roadLengthM": 661,
+      "roadType": "Residential Street",
+      "areaName": "Velachery Bazaar"
+    },
+    {
+      "id": "RD-GNS-13",
+      "roadName": "Guru Nanak Salai",
+      "coordinates": [
+        [
+          12.9928,
+          80.2188
+        ],
+        [
+          12.9908,
+          80.2205
+        ],
+        [
+          12.9888,
+          80.2222
+        ],
+        [
+          12.9868,
+          80.2238
+        ]
+      ],
+      "connectedDrainNodeId": "MH-VEL-04",
+      "roadLengthM": 858,
+      "roadType": "Arterial Road",
+      "areaName": "Guru Nanak Salai"
+    },
+    {
+      "id": "RD-SUR-14",
+      "roadName": "Surya Nagar Main Road",
+      "coordinates": [
+        [
+          12.9762,
+          80.2212
+        ],
+        [
+          12.9758,
+          80.2245
+        ],
+        [
+          12.975,
+          80.227
+        ],
+        [
+          12.9742,
+          80.2265
+        ]
+      ],
+      "connectedDrainNodeId": "SI-VEL-11",
+      "roadLengthM": 749,
+      "roadType": "Residential Street",
+      "areaName": "Surya Nagar"
+    },
+    {
+      "id": "RD-RMN-15",
+      "roadName": "Ram Nagar Main Road",
+      "coordinates": [
+        [
+          12.971,
+          80.223
+        ],
+        [
+          12.9692,
+          80.221
+        ],
+        [
+          12.968,
+          80.219
+        ],
+        [
+          12.9672,
+          80.217
+        ],
+        [
+          12.9668,
+          80.214
+        ],
+        [
+          12.9665,
+          80.2095
+        ]
+      ],
+      "connectedDrainNodeId": "MH-VEL-13",
+      "roadLengthM": 1603,
+      "roadType": "Residential Street",
+      "areaName": "Ram Nagar"
+    },
+    {
+      "id": "RD-AIN-16",
+      "roadName": "Annai Indira Nagar Street",
+      "coordinates": [
+        [
+          12.9738,
+          80.2222
+        ],
+        [
+          12.9732,
+          80.2245
+        ],
+        [
+          12.9725,
+          80.2268
+        ]
+      ],
+      "connectedDrainNodeId": "JN-VEL-09",
+      "roadLengthM": 521,
+      "roadType": "Residential Street",
+      "areaName": "Annai Indira Nagar"
+    },
+    {
+      "id": "RD-AGS-17",
+      "roadName": "AGS Colony West Street",
+      "coordinates": [
+        [
+          12.9796,
+          80.2172
+        ],
+        [
+          12.978,
+          80.2165
+        ],
+        [
+          12.976,
+          80.215
+        ],
+        [
+          12.9735,
+          80.2125
+        ],
+        [
+          12.971,
+          80.2092
+        ]
+      ],
+      "connectedDrainNodeId": "SI-VEL-08",
+      "roadLengthM": 1312,
+      "roadType": "Residential Street",
+      "areaName": "AGS Colony"
+    },
+    {
+      "id": "RD-LKV-18",
+      "roadName": "Velachery Lake View Road",
+      "coordinates": [
+        [
+          12.979,
+          80.2085
+        ],
+        [
+          12.9786,
+          80.2055
+        ],
+        [
+          12.9782,
+          80.2025
+        ]
+      ],
+      "connectedDrainNodeId": "JN-VEL-12",
+      "roadLengthM": 658,
+      "roadType": "Residential Street",
+      "areaName": "Velachery Lakefront"
+    },
+    {
+      "id": "RD-TSN-19",
+      "roadName": "Tansi Nagar Main Road",
+      "coordinates": [
+        [
+          12.9886,
+          80.2112
+        ],
+        [
+          12.99,
+          80.2106
+        ],
+        [
+          12.9918,
+          80.21
+        ]
+      ],
+      "connectedDrainNodeId": "JN-VEL-03",
+      "roadLengthM": 378,
+      "roadType": "Residential Street",
+      "areaName": "Tansi Nagar"
+    },
+    {
+      "id": "RD-VJ4-20",
+      "roadName": "Vijayanagar 4th Main Street",
+      "coordinates": [
+        [
+          12.979,
+          80.2085
+        ],
+        [
+          12.9808,
+          80.21
+        ],
+        [
+          12.9832,
+          80.2108
+        ],
+        [
+          12.985,
+          80.2132
+        ]
+      ],
+      "connectedDrainNodeId": "SI-VEL-14",
+      "roadLengthM": 866,
+      "roadType": "Residential Street",
+      "areaName": "Vijayanagar"
+    }
+  ]
+}

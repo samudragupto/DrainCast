@@ -1,12 +1,31 @@
-node_modules
-dist
-dist-ssr
+# dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# builds
+dist/
+dist-ssr/
+build/
+*.pyc
+
+# environment
+.env
+.env.local
 *.local
-.DS_Store
+
+# editor / OS
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
+.DS_Store
+
+# logs
 npm-debug.log*
-qa
-playwright-report
-test-results
+pip-log.txt
+
+# QA scratch
+qa/
+playwright-report/
+test-results/

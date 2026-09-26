@@ -1,4 +1,6 @@
+# Netlify deployment — the frontend is a Vite SPA living in ./frontend.
 [build]
+  base = "frontend"
   command = "npm run build"
   publish = "dist"
 

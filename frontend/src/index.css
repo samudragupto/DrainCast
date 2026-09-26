@@ -1,0 +1,356 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ */
+/* Theme tokens — dark (default) and light, driven by [data-theme]     */
+/* ------------------------------------------------------------------ */
+
+:root {
+  color-scheme: dark;
+  --bg: #070b16;
+  --canvas: #0b1026;
+  --surface: #101729;
+  --surface-2: #151d33;
+  --border: #262e4d;
+  --text-1: #f8fafc;
+  --text-2: #b6bedc;
+  --text-3: #7c86b3;
+  --accent: #22d3ee;
+  --accent-soft: rgba(34, 211, 238, 0.12);
+  --panel-shadow: 0 8px 24px rgba(2, 5, 16, 0.45);
+  --map-water: #0a0f22;
+  --attribution-bg: rgba(7, 11, 22, 0.75);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --canvas: #f1f5f9;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --border: #e5e7eb;
+  --text-1: #0f1026;
+  --text-2: #334155;
+  --text-3: #475569;
+  --accent: #0891b2;
+  --accent-soft: rgba(8, 145, 178, 0.1);
+  --panel-shadow: 0 8px 24px rgba(15, 16, 38, 0.08);
+  --map-water: #dbe7f3;
+  --attribution-bg: rgba(255, 255, 255, 0.8);
+}
+
+/* Flood risk colors stay identical across themes for map readability */
+:root {
+  --risk-safe: #22c55e;
+  --risk-low: #a3e635;
+  --risk-moderate: #f59e0b;
+  --risk-high: #f97316;
+  --risk-severe: #dc2626;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-elevated: var(--surface-2);
+  --color-line: var(--border);
+  --color-ink: var(--text-1);
+  --color-ink-2: var(--text-2);
+  --color-ink-3: var(--text-3);
+  --color-accent: var(--accent);
+
+  --color-safe: var(--risk-safe);
+  --color-watch: var(--risk-low);
+  --color-warning: var(--risk-moderate);
+  --color-critical: var(--risk-severe);
+
+  --font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'IBM Plex Sans', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace;
+
+  --shadow-panel: var(--panel-shadow);
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                                */
+/* ------------------------------------------------------------------ */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-1);
+  font-family: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+/* Smooth theme swap — applied briefly while toggling via .theme-anim */
+body.theme-anim,
+body.theme-anim *,
+body.theme-anim *::before,
+body.theme-anim *::after {
+  transition:
+    background-color 200ms ease-out,
+    border-color 200ms ease-out,
+    color 200ms ease-out,
+    fill 200ms ease-out,
+    stroke 200ms ease-out !important;
+}
+
+/* Thin scrollbars that match each theme */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* ------------------------------------------------------------------ */
+/* Rainfall slider                                                     */
+/* ------------------------------------------------------------------ */
+
+input[type='range'].dc-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    var(--accent) 0%,
+    var(--accent) var(--fill, 50%),
+    var(--border) var(--fill, 50%),
+    var(--border) 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+input[type='range'].dc-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--surface);
+  border: 2.5px solid var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+  transition: transform 150ms ease-out;
+}
+
+input[type='range'].dc-range::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+input[type='range'].dc-range::-webkit-slider-thumb:active {
+  transform: scale(0.96);
+}
+
+input[type='range'].dc-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--surface);
+  border: 2.5px solid var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+  transition: transform 150ms ease-out;
+}
+
+/* ------------------------------------------------------------------ */
+/* Leaflet — theme-aware chrome                                        */
+/* ------------------------------------------------------------------ */
+
+.leaflet-container {
+  background: var(--map-water);
+  font-family: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  outline: none;
+}
+
+.leaflet-container a {
+  color: var(--accent);
+}
+
+.leaflet-control-attribution {
+  background: var(--attribution-bg) !important;
+  color: var(--text-3) !important;
+  font-size: 9.5px !important;
+  backdrop-filter: blur(4px);
+  border-top-left-radius: 4px;
+}
+
+.leaflet-control-attribution a {
+  color: var(--text-3) !important;
+}
+
+.leaflet-tooltip {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-1) !important;
+  border-radius: 8px !important;
+  box-shadow: var(--panel-shadow) !important;
+  padding: 6px 9px !important;
+  font-size: 11px !important;
+}
+
+.leaflet-tooltip-top::before {
+  border-top-color: var(--border) !important;
+}
+.leaflet-tooltip-bottom::before {
+  border-bottom-color: var(--border) !important;
+}
+.leaflet-tooltip-left::before {
+  border-left-color: var(--border) !important;
+}
+.leaflet-tooltip-right::before {
+  border-right-color: var(--border) !important;
+}
+
+/* Roads: smooth risk recolouring + hover lift */
+.road-line {
+  transition:
+    stroke 320ms ease-out,
+    stroke-width 160ms ease-out,
+    opacity 240ms ease-out;
+  cursor: pointer;
+}
+
+.road-line:hover {
+  stroke-width: 7;
+  filter: saturate(1.25);
+}
+
+.road-selected-dash {
+  animation: dash-crawl 1.4s linear infinite;
+}
+
+@keyframes dash-crawl {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+/* Drainage network */
+.drain-pipe {
+  transition: stroke 240ms ease-out, opacity 240ms ease-out;
+}
+
+.drain-node {
+  transition: fill 240ms ease-out;
+}
+
+.terrain-zone {
+  transition: fill 320ms ease-out, stroke 320ms ease-out;
+}
+
+/* Route pins */
+.route-pin {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: var(--accent);
+  border: 2.5px solid var(--surface);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 45%, transparent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.route-pin.dest {
+  background: var(--risk-severe);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--risk-severe) 45%, transparent);
+}
+
+.route-pin-label {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--text-2);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  white-space: nowrap;
+}
+
+/* LRM route line pulse — subtle, purposeful */
+.route-safe-line {
+  filter: drop-shadow(0 0 4px color-mix(in srgb, var(--accent) 55%, transparent));
+}
+
+.conventional-line {
+  transition: stroke 240ms ease-out;
+}
+
+/* Map fade-in on mount */
+.leaflet-pane {
+  animation: map-fade 420ms ease-out both;
+}
+
+@keyframes map-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Small utilities                                                     */
+/* ------------------------------------------------------------------ */
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 6px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+.pulse-dot {
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
