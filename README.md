@@ -258,8 +258,11 @@ DrainCast/
 │   ├── PRESENTATION_SCRIPT_3_MINUTES.md
 │   ├── JUDGE_QA.md
 │   ├── SIH_IDEA_DESCRIPTION.md
+│   ├── DEPLOYMENT.md
 │   └── SCREENSHOT_GUIDE.md
 ├── .gitignore · LICENSE · netlify.toml · README.md
+├── package.json · vercel.json    # root-level fallbacks so the repo deploys
+│                                 # even without Root Directory = frontend
 ```
 
 ## Screenshots
@@ -307,6 +310,15 @@ Full script with exact lines and pointing guidance:
 - [SRTM](https://www2.jpl.nasa.gov/srtm/) — elevation & slope methodology
 - [OpenStreetMap](https://www.openstreetmap.org/copyright) — road alignments
   (© OSM contributors)
+- [OSRM](https://project-osrm.org/) / [Leaflet Routing Machine](https://github.com/perliedman/leaflet-routing-machine) — routing baseline
+- [CARTO basemaps](https://carto.com/attribution/) — map tiles
+- Greater Chennai Corporation — ward structure & stormwater asset context
+
+## Disclaimer
+
+DrainCast is a hackathon prototype built on synthetic, illustrative data. It
+must **not** be used for real flood response, evacuation or navigation
+decisions. Depths, capaci OSM contributors)
 - [OSRM](https://project-osrm.org/) / [Leaflet Routing Machine](https://github.com/perliedman/leaflet-routing-machine) — routing baseline
 - [CARTO basemaps](https://carto.com/attribution/) — map tiles
 - Greater Chennai Corporation — ward structure & stormwater asset context

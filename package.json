@@ -1,0 +1,13 @@
+{
+  "name": "draincast-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "DrainCast monorepo root — the app lives in ./frontend. This file exists so hosting platforms that build from the repository root (e.g. a Vercel project without a Root Directory override) still produce a working deploy.",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "cd frontend && npm ci && npm run build",
+    "dev": "cd frontend && npm run dev"
+  }
+}

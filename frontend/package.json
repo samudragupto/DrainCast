@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Urban Flood Nowcasting by Rainfall-Drainage-Terrain Coupling — SIH 2026 (SIH26085) frontend prototype",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
