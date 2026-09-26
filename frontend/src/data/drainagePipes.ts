@@ -1,0 +1,25 @@
+import type { DrainagePipe } from '../types'
+
+/**
+ * 15 directed pipe connections. Flow follows gravity: the northern and
+ * eastern sub-catchments drain via the Main Road trunk, the southern grid
+ * via Ram Nagar, and everything converges on the Pallikaranai marsh outfall
+ * at MH-VEL-10.
+ */
+export const drainagePipes: DrainagePipe[] = [
+  { id: 'P-101', from: 'MH-VEL-01', to: 'SI-VEL-02', capacityM3Hr: 85 },
+  { id: 'P-102', from: 'SI-VEL-02', to: 'JN-VEL-03', capacityM3Hr: 70 },
+  { id: 'P-103', from: 'JN-VEL-03', to: 'SI-VEL-14', capacityM3Hr: 55 },
+  { id: 'P-104', from: 'SI-VEL-14', to: 'SI-VEL-08', capacityM3Hr: 45 },
+  { id: 'P-105', from: 'SI-VEL-08', to: 'JN-VEL-09', capacityM3Hr: 60 },
+  { id: 'P-106', from: 'JN-VEL-09', to: 'MH-VEL-10', capacityM3Hr: 95 },
+  { id: 'P-107', from: 'SI-VEL-05', to: 'MH-VEL-04', capacityM3Hr: 75 },
+  { id: 'P-108', from: 'MH-VEL-04', to: 'JN-VEL-06', capacityM3Hr: 65 },
+  { id: 'P-109', from: 'JN-VEL-06', to: 'MH-VEL-07', capacityM3Hr: 50 },
+  { id: 'P-110', from: 'MH-VEL-07', to: 'SI-VEL-11', capacityM3Hr: 40 },
+  { id: 'P-111', from: 'SI-VEL-11', to: 'JN-VEL-09', capacityM3Hr: 45 },
+  { id: 'P-112', from: 'JN-VEL-12', to: 'MH-VEL-13', capacityM3Hr: 55 },
+  { id: 'P-113', from: 'MH-VEL-13', to: 'MH-VEL-10', capacityM3Hr: 70 },
+  { id: 'P-114', from: 'SI-VEL-02', to: 'JN-VEL-12', capacityM3Hr: 60 },
+  { id: 'P-115', from: 'MH-VEL-07', to: 'SI-VEL-08', capacityM3Hr: 35 },
+]

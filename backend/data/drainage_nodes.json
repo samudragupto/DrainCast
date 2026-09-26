@@ -1,0 +1,145 @@
+{
+  "count": 14,
+  "nodes": [
+    {
+      "id": "MH-VEL-01",
+      "nodeName": "MH-VEL-01",
+      "type": "Manhole",
+      "position": [
+        12.9902,
+        80.2072
+      ],
+      "elevationM": 8.6
+    },
+    {
+      "id": "SI-VEL-02",
+      "nodeName": "SI-VEL-02",
+      "type": "Stormwater Inlet",
+      "position": [
+        12.9872,
+        80.2085
+      ],
+      "elevationM": 8.1
+    },
+    {
+      "id": "JN-VEL-03",
+      "nodeName": "JN-VEL-03",
+      "type": "Junction",
+      "position": [
+        12.9886,
+        80.2112
+      ],
+      "elevationM": 7.4
+    },
+    {
+      "id": "MH-VEL-04",
+      "nodeName": "MH-VEL-04",
+      "type": "Manhole",
+      "position": [
+        12.9928,
+        80.2188
+      ],
+      "elevationM": 8.9
+    },
+    {
+      "id": "SI-VEL-05",
+      "nodeName": "SI-VEL-05",
+      "type": "Stormwater Inlet",
+      "position": [
+        12.9935,
+        80.2215
+      ],
+      "elevationM": 9.3
+    },
+    {
+      "id": "JN-VEL-06",
+      "nodeName": "JN-VEL-06",
+      "type": "Junction",
+      "position": [
+        12.9852,
+        80.2248
+      ],
+      "elevationM": 7.6
+    },
+    {
+      "id": "MH-VEL-07",
+      "nodeName": "MH-VEL-07",
+      "type": "Manhole",
+      "position": [
+        12.978,
+        80.2268
+      ],
+      "elevationM": 6.8
+    },
+    {
+      "id": "SI-VEL-08",
+      "nodeName": "SI-VEL-08",
+      "type": "Stormwater Inlet",
+      "position": [
+        12.9782,
+        80.2198
+      ],
+      "elevationM": 6.1
+    },
+    {
+      "id": "JN-VEL-09",
+      "nodeName": "JN-VEL-09",
+      "type": "Junction",
+      "position": [
+        12.9738,
+        80.2222
+      ],
+      "elevationM": 5.4
+    },
+    {
+      "id": "MH-VEL-10",
+      "nodeName": "MH-VEL-10",
+      "type": "Manhole",
+      "position": [
+        12.9682,
+        80.2245
+      ],
+      "elevationM": 5.2
+    },
+    {
+      "id": "SI-VEL-11",
+      "nodeName": "SI-VEL-11",
+      "type": "Stormwater Inlet",
+      "position": [
+        12.9758,
+        80.2245
+      ],
+      "elevationM": 6
+    },
+    {
+      "id": "JN-VEL-12",
+      "nodeName": "JN-VEL-12",
+      "type": "Junction",
+      "position": [
+        12.979,
+        80.2085
+      ],
+      "elevationM": 6.9
+    },
+    {
+      "id": "MH-VEL-13",
+      "nodeName": "MH-VEL-13",
+      "type": "Manhole",
+      "position": [
+        12.9672,
+        80.217
+      ],
+      "elevationM": 5.8
+    },
+    {
+      "id": "SI-VEL-14",
+      "nodeName": "SI-VEL-14",
+      "type": "Stormwater Inlet",
+      "position": [
+        12.9842,
+        80.2135
+      ],
+      "elevationM": 6.6
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+
+# builds
+dist/
+dist-ssr/
+build/
+*.pyc
+
+# environment
+.env
+.env.local
+*.local
+
+# editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# logs
+npm-debug.log*
+pip-log.txt
+
+# QA scratch
+qa/
+playwright-report/
+test-results/
